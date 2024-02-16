@@ -44,7 +44,7 @@ public:
 	float GetScore();
 
 	UFUNCTION(BlueprintCallable)
-	float GetCoins();
+	int32 GetCoins();
 
 	UFUNCTION(BlueprintCallable)
 	AFloorTile* AddFloorTile(const bool bSpawnItems);

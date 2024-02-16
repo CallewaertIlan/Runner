@@ -43,7 +43,7 @@ float AGameModeRunner::GetScore()
 	return LevelScore;
 }
 
-float AGameModeRunner::GetCoins()
+int32 AGameModeRunner::GetCoins()
 {
 	return TotalCoins;
 }
@@ -84,11 +84,3 @@ void AGameModeRunner::ResetScore()
 {
 	LevelScore = 0.f;
 }
-
-//void AGameModeRunner::Tick(float DeltaTime)
-//{
-//	Super::Tick(DeltaTime);
-//
-//	UpdateScore(DeltaTime);
-//
-//}

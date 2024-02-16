@@ -31,6 +31,9 @@ public:
 	UPROPERTY(VisibleInstanceOnly, BlueprintReadWrite)
 	int32 NextLane = 0;
 
+	UFUNCTION(BlueprintImplementableEvent, Category = "Roll")
+	void Roll();
+
 	UFUNCTION(BlueprintImplementableEvent, Category = "Lane")
 	void ChangeLane();
 
@@ -72,7 +75,7 @@ protected:
 
 	UPROPERTY()
 	bool bIsDead = false;
-
+	
 	UFUNCTION()
 	void MyMoveRight();
 

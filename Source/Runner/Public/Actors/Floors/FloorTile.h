@@ -28,6 +28,9 @@ public:
 	TSubclassOf<AObstacles> BigObstacleClass;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Config)
+	TSubclassOf<AObstacles> UpObstacleClass;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Config)
 	TSubclassOf<ACoinsItems> CoinClass;
 
 	UPROPERTY(VisibleAnywhere, BlueprintReadOnly, Category = "Components")
@@ -58,7 +61,10 @@ public:
 	float SpawnPercent2 = 0.3f;
 
 	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Config)
-	float SpawnPercent3 = 0.5f;
+	float SpawnPercent3 = 0.4f;
+
+	UPROPERTY(EditAnywhere, BlueprintReadOnly, Category = Config)
+	float SpawnPercent4 = 0.6f;
 
 	FORCEINLINE const FTransform& GetAttachTransform() const
 	{

@@ -62,7 +62,7 @@ void ARunCharacter::MyMoveLeft()
 
 void ARunCharacter::MyMoveDown()
 {
-	UE_LOG(LogTemp, Warning, TEXT("MOVE DOWN WAS PRESSED"));
+	Roll();
 }
 
 

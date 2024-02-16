@@ -77,11 +77,14 @@ void AFloorTile::SpawnLaneItem(UArrowComponent* Lane)
 	{
 		AObstacles* Obstacle = GetWorld()->SpawnActor<AObstacles>(BigObstacleClass, SpawnLocation, SpawnParameters);
 	}
-	else if (UKismetMathLibrary::InRange_FloatFloat(RandVal, SpawnPercent3, 1.f, true, true))
+	else if (UKismetMathLibrary::InRange_FloatFloat(RandVal, SpawnPercent3, SpawnPercent4, true, true))
+	{
+		AObstacles* Obstacle = GetWorld()->SpawnActor<AObstacles>(UpObstacleClass, SpawnLocation, SpawnParameters);
+	}
+	else if (UKismetMathLibrary::InRange_FloatFloat(RandVal, SpawnPercent4, 1.f, true, true))
 	{
 		ACoinsItems* Coin = GetWorld()->SpawnActor<ACoinsItems>(CoinClass, SpawnLocation, SpawnParameters);
 	}
-
 
 }
 
